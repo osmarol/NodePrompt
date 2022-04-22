@@ -2,7 +2,7 @@
 
 const { MongoClient, ObjectId } = require("mongodb");
 
-//Conexão do NodeJS com o MongoDB usando o driver nativo mongodb: 
+//Conexão do NodeJS com o MongoDB usando o driver nativo: mongodb.
 async function connect() {
     if(global.db) return global.db;
     const conn = await MongoClient.connect("mongodb://localhost:27017/", {useUnifiedTopology: true });
