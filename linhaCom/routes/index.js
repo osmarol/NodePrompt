@@ -38,7 +38,7 @@ router.get('/edit/:id', async function(req, res, next) {
   try{
     const id = req.params.id;
     const doc = await db.findOne(id);
-    res.render('new', { title: 'Edição de Cliente', doc, action: '/edit/' + doc._id});
+    res.render('new', { title: 'Editando Cliente', doc, action: '/edit/' + doc._id});
   }catch(ex){
     res.redirect('/erro=${ex}');
   }
