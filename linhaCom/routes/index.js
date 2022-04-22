@@ -4,7 +4,7 @@ const db = require('../db');
 
 /* GET new page */
 router.get('/new', function(req, res, next){
-  res.render('new', {title: "Cadastro de Cliente", doc: {}, action:"/new"});
+  res.render('new', {title: "Cadastrando Cliente", doc: {}, action:"/new"});
 })
 
 /* POST edit page */
